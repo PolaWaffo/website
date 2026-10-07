@@ -1,5 +1,5 @@
 "use client"
-import { Quote } from 'lucide-react';
+import { Quote, User, User2 } from 'lucide-react';
 import React from 'react'
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
@@ -19,7 +19,7 @@ export default function Testimonies() {
             icon: <Quote className="w-12 h-12  mb-2" />,
           testimony:
            t('testimonies.client1'),
-          image: "/assets/user.png",
+          image: User,
           name: t('testimonies.namef') +  " " +  "Simo",
           position: t('testimonies.p1'),
         },
@@ -27,7 +27,7 @@ export default function Testimonies() {
             icon: <Quote className="w-12 h-12  mb-2" />,
           testimony:
           t('testimonies.client2'),
-          image: "/assets/user.png",
+          image: User2,
           name: t('testimonies.namem') +  " " + 'koum Samuel',
           position: t('testimonies.p2') ,
         },
@@ -35,7 +35,7 @@ export default function Testimonies() {
             icon: <Quote className="w-12 h-12  mb-2" />,
           testimony:
           t('testimonies.client3'),
-          image: "/assets/user.png",
+          image: User,
           name: t('testimonies.namef') +  " " + "Siewe Katia",
           position: t('testimonies.p3'),
         },
@@ -43,7 +43,7 @@ export default function Testimonies() {
           icon: <Quote className="w-12 h-12  mb-2" />,
           testimony:
           t('testimonies.client4'),
-          image: "/assets/user.png",
+          image: User2,
           name:t('testimonies.namem') +  " " +  "Nzebaze",
           position: t('testimonies.p4'),
         },
@@ -51,7 +51,7 @@ export default function Testimonies() {
             icon: <Quote className="w-12 h-12  mb-2" />,
           testimony:
           t('testimonies.client5'),
-          image: "/assets/user.png",
+          image: User,
           name: t('testimonies.namem') +  " " + "Bell Lontsi",
           position: t('testimonies.p5'),
         },
@@ -75,6 +75,8 @@ export default function Testimonies() {
       <Carousel
         opts={{
           align: "start",
+          containScroll:"trimSnaps",
+          dragFree:true
         }}
         className="w-full "
       >
@@ -86,18 +88,13 @@ export default function Testimonies() {
             >
               <Card className="p-6 max-w-md rounded-xl shadow-lg hover:bg-white hover:text-black transition-colors duration-700 flex flex-col h-full bg-blue text-white">
                 <div className="flex justify-start">{client.icon}</div>
-                <CardContent className="flex-grow text-center font-mons-medium text-lg   mb-4">
+                <CardContent className="flex-grow text-center font-mons-medium text-lg mb-1">
                   {client.testimony}
                 </CardContent>
-                <hr className="border-gray-300 mb-4" />
+                <hr className="border-gray-300 mb-1" />
                 <div className="flex items-center justify-center gap-4">
                   <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-blue">
-                    <Image
-                      src={client.image}
-                      alt={client.name}
-                      fill
-                      className="object-cover"
-                    />
+                    <client.image className='flex justify-center items-center w-full h-full'/>
                   </div>
                   <div className="text-left font-mons-medium">
                     <p className="font-semibold text-lg ">

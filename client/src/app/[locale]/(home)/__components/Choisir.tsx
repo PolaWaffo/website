@@ -2,26 +2,30 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { useI18n } from "@/locales/client";
 import { motion } from "framer-motion";
-import { Share2 } from "lucide-react";
+import { BadgeCheck,  Handshake,  Target } from "lucide-react";
 export default function ChoisirSection() {
   const t= useI18n()
     const choisir = [
         {
           title: t('choose.list.results'),
           content:
-            t('choose.list.results.content')
+            t('choose.list.results.content'),
+          icon:Target
         },
         {
           title: t('choose.list.support'),
           content:
-           t('choose.list.results.content')
+           t('choose.list.support.content'),
+           icon:Handshake
         },
     
         {
           title: t('choose.list.deadlines'),
           content:
-            t('choose.list.deadlines.content')
+            t('choose.list.deadlines.content'),
+             icon:BadgeCheck
         },
+       
       ];
     return (
       <section className="flex flex-col my-10 md:mx-20">
@@ -42,10 +46,14 @@ export default function ChoisirSection() {
             <div key={index} className="relative overflow-hidden">
               <Card className="max-w-md h-[210px] bg-white text-black-pale hover:bg-blue transition-all duration-700 hover:scale-105 hover:rounded-3xl rounded-xl p-6 text-center group flex flex-col items-center justify-center">
                 <CardContent className="transition-all duration-700 text-center">
-                  <Share2 className="w-12 h-12 px-1 border rounded-full text-blue bg-white" />
+                
+                  
+                 <div className="flex gap-2 items-center">
+                   <item.icon className="flex items-center justify-center p-1 h-10 w-10 border rounded-full text-blue bg-white" />
                   <h3 className="text-lg font-extrabold group-hover:text-white font-natom-bold text-black-pale">
                     {item.title}
                   </h3>
+                 </div>
                   <p className="text-sm text-black-pale group-hover:text-white font-mons-medium mt-2">
                     {item.content}
                   </p>

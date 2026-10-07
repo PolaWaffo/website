@@ -11,6 +11,225 @@ import { useState } from 'react';
 
 export default function RealizationsSection() {
   const t = useI18n();
+//  const projects = [
+//   {
+//     id: 1,
+//     name: "Auto-École Bilingue Juste",
+//     category: "website",
+//     categoryLabel: "Website",
+//     image:
+//       "https://www.justeglobal.com/_next/image?q=75&url=%2Fimages%2Fz11.jpg&w=1920",
+//     alt: "Auto-École Bilingue Juste website",
+//     description:
+//       "A bilingual website presenting the driving school's training, services and vehicles.",
+//     tags: ["Business website", "FR / EN", "Responsive"],
+//     url: "https://www.justeglobal.com/",
+//   },
+
+//   {
+//     id: 2,
+//     name: "Décollage",
+//     category: "website",
+//     categoryLabel: "Website",
+//     image: "./assets/images/longrich.png",
+//     alt: "Décollage website",
+//     description:
+//       "A website designed to present the organisation, its activities and its services clearly.",
+//     tags: ["Website", "Responsive"],
+//     url: "https://decollage-website-d5ixlwuqj-jpteks-projects.vercel.app/fr",
+//   },
+
+//   {
+//     id: 3,
+//     name: "CHS",
+//     category: "website",
+//     categoryLabel: "Website",
+//     image:
+//       "https://chs-lyart.vercel.app/_next/image?q=75&url=%2F_next%2Fstatic%2Fmedia%2Flobby.3mes9m705bef6.png&w=1200",
+//     alt: "CHS website",
+//     description:
+//       "A professional website presenting CHS sanitation, hygiene and QHSE services.",
+//     tags: ["Corporate", "FR / EN", "QHSE"],
+//     url: "https://chs-lyart.vercel.app/fr",
+//   },
+
+//   {
+//     id: 4,
+//     name: "Cargo",
+//     category: "website",
+//     categoryLabel: "Website",
+//     image:
+//       "https://nova-cargo-cargo-tk67-sigma.vercel.app/_next/image?q=75&url=%2F_next%2Fstatic%2Fmedia%2FCargo+-+Pitch+Deck2.9f2a913e.png&w=1920",
+//     alt: "Cargo application",
+//     description:
+//       "A digital platform for tracking commodity vaults, trades and investment activity.",
+//     tags: ["Fintech", "Dashboard", "Commodities"],
+//     url: "https://nova-cargo-cargo-tk67-sigma.vercel.app/",
+//   },
+
+//   {
+//     id: 5,
+//     name: "Nova Commodities",
+//     category: "website",
+//     categoryLabel: "Website",
+//     image: "./assets/images/nova.png",
+//     alt: "Nova Commodities website",
+//     description:
+//       "A corporate website presenting commodity sourcing, custody, trading and export activities.",
+//     tags: ["Corporate", "Commodities", "Africa"],
+//     url: "https://nova-cargo-nova.vercel.app/",
+//   },
+
+//   {
+//     id: 6,
+//     name: "Finzo",
+//     category: "web-app",
+//     categoryLabel: "Web App",
+//     image: "./assets/images/finzo.png",
+//     alt: "Finzo web application",
+//     description:
+//       "A digital finance application designed around financial management and user interaction.",
+//     tags: ["Fintech", "Web App", "Dashboard"],
+//     url: "https://finzo-woad.vercel.app/",
+//   },
+
+//   {
+//     id: 7,
+//     name: "Spring Coop",
+//     category: "website",
+//     categoryLabel: "Website",
+//     image: "./assets/images/spring.png",
+//     alt: "Spring Coop digital platform",
+//     description:
+//       "A digital platform concept designed to make cooperative activities easier to manage and access.",
+//     tags: ["Web App", "Platform", "Responsive"],
+//     url: "https://spring-coop-qtqrmhh15-jpteks-projects.vercel.app/",
+//   },
+
+//   {
+//     id: 8,
+//     name: "Principauté Hotel",
+//     category: "website",
+//     categoryLabel: "Website",
+//     image: "./assets/images/principaute.png",
+//     alt: "Principauté H website",
+//     description:
+//       "A modern web experience created to present the brand, its identity and its activities.",
+//     tags: ["Website", "Branding", "Responsive"],
+//     url: "https://principaute-h.vercel.app/",
+//   },
+
+//   {
+//     id: 9,
+//     name: "ProHealth",
+//     category: "web-app",
+//     categoryLabel: "Web App",
+//     image: "./assets/images/tjp.png",
+//     alt: "ProHealth web application",
+//     description:
+//       "A digital health experience designed to make health-related services and information easier to access.",
+//     tags: ["Health", "Web App", "UI/UX"],
+//     url: "https://prohealth-khaki.vercel.app/",
+//   },
+
+
+
+//   {
+//     id: 10,
+//     name: "Mboa Shop",
+//     category: "web-app",
+//     categoryLabel: "Web App",
+//     image: "./assets/images/mboa.png",
+//     alt: "Mboa Shop e-commerce application",
+//     description:
+//       "An online shopping experience built around products, discovery and digital purchasing.",
+//     tags: ["E-commerce", "Shopping", "Responsive"],
+//     url: "https://mboashopsite.onrender.com/",
+//   },
+
+//   {
+//     id: 11,
+//     name: "Gemini Vika",
+//     category: "web-app",
+//     categoryLabel: "Web App",
+//     image: "./assets/images/gemini.png",
+//     alt: "Gemini Vika web application",
+//     description:
+//       "A web application focused on building a personalised Chat model",
+//     tags: ["Web App", "Interactive", "Responsive"],
+//     url: "https://gemini-vika.onrender.com/",
+//   },
+
+  
+
+//   {
+//     id: 13,
+//     name: "DigitalBank",
+//     category: "website",
+//     categoryLabel: "Website",
+//     image:
+//       "https://ffdwrr.netlify.app/assets/images/image-mockups.png",
+//     alt: "DigitalBank mobile application",
+//     description:
+//       "A digital banking experience designed around everyday financial activities.",
+//     tags: ["Fintech", "Mobile", "UI/UX"],
+//     url: "https://ffdwrr.netlify.app/",
+//   },
+
+//   {
+//     id: 14,
+//     name: "Article Summarizer",
+//     category: "web-app",
+//     categoryLabel: "Web App",
+//     image: "./assets/images/sumarise.png",
+//     alt: "Article summarizer web application",
+//     description:
+//       "A web application designed to make long articles easier to understand and consume.",
+//     tags: ["AI", "Web App", "Productivity"],
+//     url: "https://summariseepola.netlify.app/",
+//   },
+
+ 
+
+//   {
+//     id: 15,
+//     name: "Find Your Home",
+//     category: "web-app",
+//     categoryLabel: "Web App",
+//     image: "./assets/images/fyh.png",
+//     alt: "Find Your Home real estate application",
+//     description:
+//       "A property platform designed to help people discover homes and explore available listings.",
+//     tags: ["Real Estate", "Search", "Web App"],
+//     url: "https://find-yourhome.lovable.app/",
+//   },
+
+//  {
+//   id: 16,
+//   name: "Relationship Discovery Platform",
+//   category: "ui-ux",
+//   categoryLabel: "UI/UX",
+//   image: "",
+//   alt: "Relationship discovery platform UI/UX design",
+//   description:
+//     "A relationship platform designed to help single people meet others, discover meaningful connections and find a potential partner through a simple and welcoming experience.",
+//   tags: ["Figma", "UI/UX", "Social Platform"],
+//   url: "https://www.figma.com/design/eQpWznavNqoCU39NqSHvDy/Sans-titre?node-id=107-142&t=30qIJQsIi22ujQlC-1",
+// },
+
+// {
+//   id: 17,
+//   name: "E-Learning Platform",
+//   category: "ui-ux",
+//   categoryLabel: "UI/UX",
+//   image: "./assets/images/e-learning.png",
+//   alt: "E-learning platform UI/UX design",
+//   description:
+//     "An e-learning platform designed to make online learning easier, helping learners discover courses, follow their progress and access educational content in one place.",
+//   tags: ["Figma", "UI/UX", "E-Learning"],
+//   url: "https://www.figma.com/proto/pEZo7tpayIzkGCm4hayU31/UI?node-id=238-206&starting-point-node-id=238%3A200&t=pjnk4fuAldtbsOqU-1",
+// },
+// ];
 
   const realizations = [
     {
@@ -18,14 +237,14 @@ export default function RealizationsSection() {
       title: t('realizations.4.title'),
       description: t('realizations.4.description'),
       image: '/assets/longrich.png',
-      link:'https://www.longrich-decollage.com/fr',
+      link:'https://decollage-website-d5ixlwuqj-jpteks-projects.vercel.app/fr',
     },
     {
       id: 5,
       title: t('realizations.8.title'),
       description: t('realizations.8.description'),
       image: '/assets/solif.png',
-      link: 'https://www.solifcoopbod.com/',
+      link: 'https://spring-coop-qtqrmhh15-jpteks-projects.vercel.app/',
     },
     {
       id: 2,
@@ -46,7 +265,7 @@ export default function RealizationsSection() {
       title: t('realizations.3.title'),
       description: t('realizations.3.description'),
       image: '/assets/finzo1.png',
-      link: 'https://finzo.onrender.com/',
+      link: 'https://finzo-woad.vercel.app/',
     },
    
     {
@@ -103,7 +322,7 @@ export default function RealizationsSection() {
             />
 
 <div
-        className={`absolute inset-0 text-white bg-gradient-to-t from-blue/80 via-blue/50 to-blue-60 p-4 transition-all duration-700 ease-in-out flex flex-col justify-center gap-4 text-sm text-center
+        className={`absolute inset-0 text-white bg-gradient-to-t from-blue/80 via-blue-900/50 to-blue-900 p-4 transition-all duration-700 ease-in-out flex flex-col justify-center gap-4 text-sm text-center
           ${isTapped ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"} 
           group-hover:opacity-100 group-hover:translate-y-0`}
       >

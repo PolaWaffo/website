@@ -5,13 +5,13 @@ import { useI18n } from "@/locales/client";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-  } from "@/components/ui/carousel";
+// import {
+//     Carousel,
+//     CarouselContent,
+//     CarouselItem,
+//     CarouselNext,
+//     CarouselPrevious,
+//   } from "@/components/ui/carousel";
 
   
 
@@ -170,7 +170,7 @@ export default function AboutPage() {
       </section> */}
 
       {/* Notre Équipe */}
-      <section className="flex flex-col my-10 md:mx-20">
+      {/* <section className="flex flex-col my-10 md:mx-20">
     <h2 className="text-center font-natom-bold text-3xl md:text-5xl font-semibold">
     {t('about.team.title')}
     </h2>
@@ -213,7 +213,7 @@ export default function AboutPage() {
   </Carousel>
 </motion.div>
 
-  </section>
+  </section> */}
     </main>
     <Footer/>
 </div>

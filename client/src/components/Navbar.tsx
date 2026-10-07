@@ -112,10 +112,11 @@ import { Switch } from "./ui/switch";
 import { useI18n } from "@/locales/client"; // adjust path if needed
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Menu } from "lucide-react";
+import { Button } from "./ui/button";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [,startTransition] = useTransition();
+  const [, startTransition] = useTransition();
   const router = useRouter();
   const pathname = usePathname();
   const params = useParams();
@@ -128,8 +129,8 @@ export default function Navbar() {
     { href: `/${locale}`, label: t("navbar.home") },
     { href: `/${locale}/about`, label: t("navbar.about") },
     { href: `/${locale}/pricing`, label: t("navbar.pricing") },
-    { href: `/${locale}/blog`, label: t("navbar.blog") },
-    { href: `/${locale}/contact`, label: t("navbar.contact") },
+    // { href: `/${locale}/blog`, label: t("navbar.blog") },
+    // { href: `/${locale}/contact`, label: t("navbar.contact") },
   ];
 
   // On toggle, switch locale and keep rest of the path intact
@@ -145,20 +146,19 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex items-center justify-between p-4 sticky top-0 z-[998] bg-white shadow-sm">
+    <nav className="flex items-center justify-between p-4 sticky top-0 z-[1000] bg-white shadow-sm">
       {/* Logo */}
       <Link
         href={`/${locale}`}
-        aria-label="TechSprint"
+        aria-label="Afriva"
         className="flex items-center"
       >
         <Image
           src="/assets/logo.png"
-          alt="TechSprint Logo"
+          alt="Afriva Logo"
           priority
-          width={391/2}
-          height={2085/2}
-          
+          width={80}
+          height={80}
         />
       </Link>
 
@@ -169,14 +169,17 @@ export default function Navbar() {
             <Link
               href={href}
               className={`transition-colors duration-300 hover:text-orange ${
-                pathname === href ? "bg-orange p-1 px-2 rounded-lg w-fit text-white hover:text-white" : ""
+                pathname === href
+                  ? "text-orange p-1 px-2 rounded-lg w-fit  hover:underline"
+                  : ""
               }`}
             >
               {label}
             </Link>
           </li>
         ))}
-        <li>
+        <li className="flex items-center gap-2">
+            <Button><Link href={`/${locale}/contact`}>{t("navbar.contact")}</Link></Button>
           <div className="flex items-center gap-x-2">
             FR
             {/* <Image
@@ -214,13 +217,19 @@ export default function Navbar() {
                     href={href}
                     onClick={() => setOpen(false)}
                     className={`transition-colors duration-300 hover:text-orange ${
-                       pathname === href ? "bg-orange p-1 px-2 rounded-lg w-fit text-white hover:text-white" : ""
+                      pathname === href
+                        ? "text-orange p-1 px-2 rounded-lg w-fit  hover:underline"
+                        : ""
                     }`}
                   >
                     {label}
                   </Link>
                 </li>
               ))}
+         
+              <Button >
+                <Link href={`/${locale}/contact`}>{t("navbar.contact")}</Link>
+              </Button>
               <div className="flex items-center gap-x-2">
                 FR
                 {/* <Image
@@ -230,9 +239,9 @@ export default function Navbar() {
                   alt="french"
                 /> */}
                 <Switch
-              checked={locale === "en"}
-              onCheckedChange={toggleLanguage}
-            />
+                  checked={locale === "en"}
+                  onCheckedChange={toggleLanguage}
+                />
                 {/* <Image
                   src="/assets/english.png"
                   width={28}

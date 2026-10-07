@@ -1,13 +1,13 @@
 "use client";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaClock, FaFacebookF, FaLinkedinIn, FaTiktok } from "react-icons/fa";
 import React, { startTransition } from "react";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { Switch } from "./ui/switch";
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
-import { useI18n } from "@/locales/client";
 
+import { useI18n } from "@/locales/client";
+import Image from "next/image";
+import { MdLocationOn, MdPhone } from "react-icons/md";
 export default function Footer() {
   const pathname = usePathname();
   const params = useParams();
@@ -38,18 +38,26 @@ export default function Footer() {
         t('footer.services.website'),
     },
     { label: t('footer.services.mobile')},
-    { label: t('footer.services.saas')},
-    { label: t('footer.services.graphic') },
+    // { label: t('footer.services.saas')},
+    // { label: t('footer.services.graphic') },
     { label: t('footer.services.webdesign') },
-    { label: t('footer.services.consulting') },
+    // { label: t('footer.services.consulting') },
   ];
 
   return (
     <footer className="bg-blue text-white px-6 py-10">
-   <div className="max-w-7xl mx-auto grid md:grid-cols-4 justify-between gap-8 ">
+   <div className="max-w-7xl mx-auto grid md:grid-cols-4 place-items-start gap-8 ">
 
       {/* À Propos */}
       <section aria-labelledby="footer-about" className="flex flex-col gap-4">
+           <Image
+                  src="/assets/logo.png"
+                  alt="Afriva Logo"
+                  priority
+                  width={80}
+                  height={80}
+                  
+                />
         <h2 id="footer-about" className="text-[16px] font-natom-bold font-bold">{t('footer.title')}</h2>
         <p className="text-sm leading-relaxed tracking-wider">
         {t('footer.description')}
@@ -59,7 +67,7 @@ export default function Footer() {
          
           <a
             href="https://web.facebook.com/profile.php?id=61575300329816" 
-            aria-label="Facebook TechSprint"
+            aria-label="Facebook Afriva"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-orange transition-colors border-2 rounded-full p-2"
@@ -68,12 +76,21 @@ export default function Footer() {
           </a>
           <a
             href="https://www.linkedin.com/company/techsprint-agency/"
-            aria-label="LinkedIn TechSprint"
+            aria-label="LinkedIn Afriva"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-orange transition-colors  border-2 rounded-full p-2"
           >
             <FaLinkedinIn size={20} />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/techsprint-agency/"
+            aria-label="Tiktok Afriva"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-orange transition-colors  border-2 rounded-full p-2"
+          >
+            <FaTiktok size={20} />
           </a>
         </div>
       </section>
@@ -88,7 +105,7 @@ export default function Footer() {
               <Link
                 href={href}
                 className={`flex md:-translate-x-2 transition-colors duration-300  ${
-                  pathname === href ? "bg-orange p-1 px-2 rounded-lg w-fit" : ""
+                  pathname === href ? "text-orange hover:underline p-1 px-2 rounded-lg w-fit" : ""
                 }`}
               >
                 {label}
@@ -116,18 +133,42 @@ export default function Footer() {
       {/* Newsletter */}
       <section aria-labelledby="footer-newsletter" className="flex flex-col gap-4">
         <h2 id="footer-newsletter" className="text-[16px] font-bold font-natom-bold">{t('footer.newsletter.button')}</h2>
-        <p className="text-sm leading-relaxed">
+        {/* <p className="text-sm leading-relaxed">
         {t('footer.newsletter.description')}
-        </p>
-        <div className="flex max-w-md">
-          <Input
-            type="email"
-            placeholder={t('footer.newsletter.placeholder')}
-            aria-label="Adresse email pour newsletter"
-            className="rounded-r-none border-r-0 bg-white text-black-pale"
-          />
-          <Button className="rounded-l-none border-l-0 py-4 hover:bg-orange hover:scale-105 ">{t('footer.newsletter.button')}</Button>
-        </div>
+        </p> */}
+          <div className="mt-2 space-y-4 text-sm font-mons-medium tracking-wider">
+                        <div className="flex gap-4">
+                          <MdLocationOn className="w-7 h-7" />
+                          <div className="text-sm font-mons-medium">
+                            <h4 className="font-semibold">{t("contact.address")}</h4>
+                            <p>{t("contact.address.content")}</p>
+                          </div>
+                        </div>
+        
+                        <div className="flex gap-4">
+                          <MdPhone className="w-7 h-7" />
+                          <div className="text-sm font-mons-medium">
+                            <h4 className="font-semibold">{t("contact.phone")}</h4>
+                            <p className="text-sm">{t("contact.phone.content")}</p>
+                            <p className="text-sm">{t("contact.phone.content1")}</p>
+                          </div>
+                        </div>
+        
+                        {/* <div className="flex gap-4">
+                          <FaClock className="w-7 h-7" />
+                          <div className="text-sm font-mons-medium">
+                            <h4 className="font-semibold">
+                              {t("contact.openingHours")}
+                            </h4>
+                            <p className="text-sm">
+                              {t("contact.openingHours.content")}
+                            </p>
+                            <p className="text-sm">
+                              {t("contact.openingHours.content1")}
+                            </p>
+                          </div>
+                        </div> */}
+                      </div>
       </section>
     </div>
   

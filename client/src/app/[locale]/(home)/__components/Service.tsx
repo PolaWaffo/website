@@ -19,31 +19,31 @@ export default function ServicesSection() {
           content:
           t('services.list.mobile.content')
         },
-        {
-          image: "/assets/saas.jpg",
-          title: t('services.list.saas'),
-          content:
-          t('services.list.saas.content')
-        },
+        // {
+        //   image: "/assets/saas.jpg",
+        //   title: t('services.list.saas'),
+        //   content:
+        //   t('services.list.saas.content')
+        // },
     
-        {
-          image: "/assets/design.jpg",
-          title: t('services.list.graphic'),
-          content:
-          t('services.list.graphic.content')
-        },
+        // {
+        //   image: "/assets/design.jpg",
+        //   title: t('services.list.graphic'),
+        //   content:
+        //   t('services.list.graphic.content')
+        // },
         {
           image: "/assets/designweb.jpg",
           title: t('services.list.webdesign'),
           content:
           t('services.list.webdesign.content'),
         },
-        {
-          image: "/assets/consult.jpg",
-          title: t('services.list.consulting'),
-          content:
-           t('services.list.consulting.content')
-        },
+        // {
+        //   image: "/assets/consult.jpg",
+        //   title: t('services.list.consulting'),
+        //   content:
+        //    t('services.list.consulting.content')
+        // },
       ];
   return (
     <section className="flex flex-col my-10 md:mx-20">

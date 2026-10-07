@@ -8,8 +8,8 @@ import Testimonies from "./__components/Testimonies";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "TechSprint | Solutions Numériques sur Mesure",
-  description: "TechSprint accompagne les TPE, PME et particuliers dans leur transformation digitale grâce à des solutions web modernes, accessibles et personnalisées.",
+  title: "AFRIVA | Solutions Numériques sur Mesure",
+  description: "AFRIVA accompagne les TPE, PME et particuliers dans leur transformation digitale grâce à des solutions web modernes, accessibles et personnalisées.",
 };
 
 export default function Home() {
