@@ -45,13 +45,13 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-blue text-white px-6 py-10">
-   <div className="max-w-7xl mx-auto grid md:grid-cols-4 place-items-start gap-8 ">
+    <footer className="bg-blue  text-white px-6 py-10">
+   <div className="md:place-items-center grid md:grid-cols-4  gap-8 ">
 
       {/* À Propos */}
       <section aria-labelledby="footer-about" className="flex flex-col gap-4">
            <Image
-                  src="/assets/logo.png"
+                  src="/assets/logobg.png"
                   alt="Afriva Logo"
                   priority
                   width={80}
@@ -96,16 +96,16 @@ export default function Footer() {
       </section>
   
       {/* Liens Rapides */}
-      <nav aria-label="Liens rapides" className="flex flex-col gap-4 md:items-center">
-        <h2 className="text-[16px] font-bold font-natom-bold">{t('footer.title2')}</h2>
+      <nav aria-label="Liens rapides" className="flex flex-col gap-4">
+        <h2 className="text-[16px] font-bold  font-natom-bold">{t('footer.title2')}</h2>
         <ul className="flex flex-col gap-2 font-mons-medium text-sm">
 
           {navItems.map(({ href, label }) => (
             <li key={href}>
               <Link
                 href={href}
-                className={`flex md:-translate-x-2 transition-colors duration-300  ${
-                  pathname === href ? "text-orange hover:underline p-1 px-2 rounded-lg w-fit" : ""
+                className={` transition-colors duration-300   ${
+                  pathname === href ? "text-orange hover:underline" : ""
                 }`}
               >
                 {label}
@@ -117,7 +117,7 @@ export default function Footer() {
   
       {/* Nos Services */}
       <nav aria-label="Nos services" className="flex flex-col gap-4">
-        <h2 className="text-[16px] font-bold font-natom-bold">{t('footer.title3')}</h2>
+        <h2 className="text-[16px] md:-mt-6 font-bold font-natom-bold">{t('footer.title3')}</h2>
         <ul className="flex flex-col gap-2 font-mons-medium text-sm">
           {serviceItems.map(({ label }, index) => (
             <li
@@ -174,9 +174,27 @@ export default function Footer() {
   
     <hr className="border-gray-600 my-8" />
   
-    <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-4 md:flex-row md:justify-center md:gap-8">
+    <div className="max-w-7xl mx-auto flex justify-center  max-md:flex-col items-center text-center gap-4  md:gap-8">
   {/* Langues */}
-  <nav aria-label="Changer la langue" className="flex items-center gap-4">
+ 
+
+  {/* Copyright */}
+  <div className='flex flex-wrap items-center justify-center gap-4'>
+  <p className="text-center text-sm font-mons-medium">
+  {t('footer.copyright')}
+    {/* <span className="font-semibold">{t('footer.privacyPolicy')}</span> */}
+
+  </p>
+  {/* <Image
+  src="/assets/jp.jpg"
+  width={24}
+  height={16}
+  alt="Logo JPTEKS"
+  className="object-cover rounded-full "
+/> */}
+
+  </div>
+   <nav aria-label="Changer la langue" className="flex justify-end gap-4">
     FR
     {/* <Image
       src="/assets/french.png"
@@ -199,24 +217,8 @@ export default function Footer() {
     /> */}
   </nav>
 
-  {/* Copyright */}
-  <div className='flex gap-x-4'>
-  <p className="text-center">
-  {t('footer.copyright')}
-    {/* <span className="font-semibold">{t('footer.privacyPolicy')}</span> */}
-
-  </p>
-  {/* <Image
-  src="/assets/jp.jpg"
-  width={24}
-  height={16}
-  alt="Logo JPTEKS"
-  className="object-cover rounded-full "
-/> */}
-
-  </div>
-
 </div>
+
 
   </footer>
   

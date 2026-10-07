@@ -70,7 +70,7 @@ export default function ServicesSection() {
                 className="object-cover rounded-xl"
               />
             </div>
-            <Card className="-mt-10 mx-4 relative z-10 group-hover:scale-105 group-hover:bg-blue/70 group-hover:text-white transition-all duration-500 bg-white border-0 rounded-xl  text-center shadow-lg">
+            <Card className="-mt-10 mx-4 relative z-10 group-hover:scale-105 group-hover:bg-blue/70 group-hover:text-white transition-all duration-1000 bg-white border-0 rounded-xl  text-center shadow-lg">
               <CardContent>
                 <h3 className="md:text-lg text-md font-extrabold group-hover:text-white font-natom-bold text-black-pale">
                   {service.title}

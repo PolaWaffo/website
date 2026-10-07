@@ -2,6 +2,7 @@
 import React from 'react'
 import AboutPage from './__components/about'
 import { Metadata } from 'next';
+import WhatsAppButton from '@/components/Whatsapp';
 
 export const metadata: Metadata = {
   title: "À propos d'AFRIVA'",
@@ -10,7 +11,10 @@ export const metadata: Metadata = {
 export default function Pricing() {
   return (
     
+    <>
      <AboutPage/>
+     <WhatsAppButton/>
+     </>
    
   )
 }

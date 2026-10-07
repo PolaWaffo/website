@@ -6,6 +6,7 @@ import ChoisirSection from "./__components/Choisir";
 import RealizationsSection from "./__components/Realisation";
 import Testimonies from "./__components/Testimonies";
 import { Metadata } from "next";
+import WhatsAppButton from "@/components/Whatsapp";
 
 export const metadata: Metadata = {
   title: "AFRIVA | Solutions Numériques sur Mesure",
@@ -31,6 +32,7 @@ export default function Home() {
 
       </main>
       <Footer />
+      <WhatsAppButton/>
     </div>
   );
 }

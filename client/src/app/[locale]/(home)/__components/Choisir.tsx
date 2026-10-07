@@ -43,23 +43,82 @@ export default function ChoisirSection() {
           className="grid grid-cols-1 md:mx-8 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 "
         >
           {choisir.map((item, index) => (
-            <div key={index} className="relative overflow-hidden">
-              <Card className="max-w-md h-[210px] hover:bg-blue  text-black-pale  transition-all duration-1000 hover:scale-105 hover:rounded-3xl rounded-xl p-6 text-center group flex flex-col items-center justify-center">
-                <CardContent className="transition-all duration-1000">
-                
-                  
-                 <div className="flex gap-2 text-nowrap items-center">
-                   <item.icon className="flex items-center justify-center p-1 h-10 w-10 border border-transparent hover:text-white rounded-full text-blue " />
-                  <h3 className="text-lg text-start font-extrabold group-hover:text-white font-natom-bold text-black-pale">
-                    {item.title}
-                  </h3>
-                 </div>
-                  <p className="text-sm text-black-pale group-hover:text-white font-mons-medium mt-2">
-                    {item.content}
-                  </p>hover:text-white
-                </CardContent>
-              </Card>
-            </div>
+           <div key={index} className="relative overflow-hidden">
+  <Card
+    className="
+      max-w-md
+      min-h-[210px]
+      h-auto
+      hover:bg-blue
+      text-black-pale
+      transition-all
+      duration-1000
+      hover:scale-105
+      hover:rounded-3xl
+      rounded-xl
+      p-6
+      text-center
+      group
+      flex
+      flex-col
+      items-center
+      justify-center
+    "
+  >
+    <CardContent className="transition-all duration-1000">
+      <div className="flex flex-col items-center justify-center gap-2">
+        
+        <item.icon
+          className="
+            flex
+            items-center
+            justify-center
+            p-1
+            h-10
+            w-10
+            border
+            border-transparent
+            rounded-full
+            text-blue
+            group-hover:text-white
+            transition-colors
+            duration-500
+          "
+        />
+
+        <h3
+          className="
+            text-lg
+            text-start
+            font-extrabold
+            group-hover:text-white
+            font-natom-bold
+            text-black-pale
+            transition-colors
+            duration-500
+          "
+        >
+          {item.title}
+        </h3>
+
+        <p
+          className="
+            text-sm
+            text-black-pale
+            group-hover:text-white
+            font-mons-medium
+            mt-2
+            transition-colors
+            duration-500
+          "
+        >
+          {item.content}
+        </p>
+
+      </div>
+    </CardContent>
+  </Card>
+</div>
           ))}
         </motion.div>
       </section>
