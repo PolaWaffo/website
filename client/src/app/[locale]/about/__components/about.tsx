@@ -31,30 +31,30 @@ export default function AboutPage() {
           text: t('about.value.excellence.content')
         }
       ]
-      const team = [
-        {
-          image: '/assets/me.JPG',
-          name: 'Pola Waffo',
-          role: t('about.team.member1.role'),
-        },
-        {
-          image: '/assets/awono.jpg',
-          name: 'Awono Bilogue ',
-          role:  t('about.team.member2.role'),
+      // const team = [
+      //   {
+      //     image: '/assets/me.JPG',
+      //     name: 'Pola Waffo',
+      //     role: t('about.team.member1.role'),
+      //   },
+      //   {
+      //     image: '/assets/awono.jpg',
+      //     name: 'Awono Bilogue ',
+      //     role:  t('about.team.member2.role'),
           
-        },
-        {
-          image: '/assets/forland.JPG',   
-          name: 'Tsafack Forland',
-          role:  t('about.team.member5.role'),
-        },
-        {
-          image: '/assets/yomi.jpeg',
-          name: 'Yomi Njike Brenda',
-          role:  t('about.team.member4.role'),
-        }, 
+      //   },
+      //   {
+      //     image: '/assets/forland.JPG',   
+      //     name: 'Tsafack Forland',
+      //     role:  t('about.team.member5.role'),
+      //   },
+      //   {
+      //     image: '/assets/yomi.jpeg',
+      //     name: 'Yomi Njike Brenda',
+      //     role:  t('about.team.member4.role'),
+      //   }, 
         
-      ];
+      // ];
       
   return (
     <div className="min-h-screen flex flex-col   ">
