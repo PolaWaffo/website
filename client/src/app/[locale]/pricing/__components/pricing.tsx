@@ -150,7 +150,7 @@ export default function OffersPage() {
           </div>
         </section>
 
-        <section className="flex flex-col py-16 px-4 md:px-20">
+        <section className="flex flex-col py-16 px-4 md:px-8 lg:px-20">
           <h2 className="text-center font-natom-bold text-3xl md:text-5xl font-semibold mb-4">
             {t("pricing.title1")}
           </h2>
@@ -158,7 +158,7 @@ export default function OffersPage() {
             {t("pricing.description1")}
           </p>
 
-          <p className="text-lg md:text-xl text-orange font-mons-medium mb-6 text-center">
+          <p className="text-lg md:text-xl text-orange font-title mb-6 text-center">
             {t("pricing.basic.title")}
           </p>
           <motion.div
@@ -166,7 +166,7 @@ export default function OffersPage() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             viewport={{ once: false, amount: 0.2 }}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
           >
             {offers.map((plan) => (
               <Card
@@ -175,7 +175,7 @@ export default function OffersPage() {
                   plan.id === 2 ? "bg-blue text-white" : "bg-white text-black"
                 } rounded-xl shadow-lg p-6`}
               >
-                <CardContent className="p-6 flex flex-col h-full justify-between">
+                <CardContent className="p-2 sm:p-4 lg:p-6 flex flex-col h-full justify-between">
                   <div>
                     <h3 className="text-xl font-natom-bold font-semibold mb-2">
                       {plan.name}
@@ -221,7 +221,7 @@ export default function OffersPage() {
             ))}
           </motion.div>
 
-          <p className="text-lg md:text-xl text-orange font-mons-medium my-10 text-center">
+          <p className="text-lg md:text-xl text-orange font-title my-10 text-center">
             {t("pricing.design.title2")}
           </p>
           <motion.div
@@ -229,7 +229,7 @@ export default function OffersPage() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             viewport={{ once: false, amount: 0.1 }}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
           >
             {offers2.map((plan) => (
               <Card
@@ -238,7 +238,7 @@ export default function OffersPage() {
                   plan.id === 2 ? "bg-blue text-white" : "bg-white text-black"
                 } rounded-xl shadow-lg p-6`}
               >
-                <CardContent className="p-6 flex flex-col h-full justify-between">
+                <CardContent className="p-2 sm:p-4 lg:p-6 flex flex-col h-full justify-between">
                   <div>
                     <h3 className="text-xl font-natom-bold font-semibold mb-2">
                       {plan.name}

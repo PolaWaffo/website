@@ -237,7 +237,7 @@ export default function RealizationsSection() {
       title: t('realizations.4.title'),
       description: t('realizations.4.description'),
       image: '/assets/longrich.png',
-      link:'https://decollage-website-d5ixlwuqj-jpteks-projects.vercel.app/fr',
+      link:'https://decollage-website.vercel.app/fr',
     },
     {
       id: 5,
@@ -324,7 +324,7 @@ export default function RealizationsSection() {
             />
 
 <div
-        className={`absolute inset-0 text-white bg-gradient-to-t from-blue/80 via-blue-900/50 to-blue-900 p-4 transition-all duration-700 ease-in-out flex flex-col justify-center gap-4 text-sm text-center
+        className={`absolute inset-0 text-white bg-gradient-to-t from-blue/80 via-blue-900/80 to-blue-900 p-4 transition-all duration-700 ease-in-out flex flex-col justify-center gap-4 text-sm text-center
           ${isTapped ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"} 
           group-hover:opacity-100 group-hover:translate-y-0`}
       >

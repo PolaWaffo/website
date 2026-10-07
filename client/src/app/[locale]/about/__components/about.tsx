@@ -67,7 +67,7 @@ export default function AboutPage() {
   {/* Image optimisée */}
   <Image
     src="/assets/about.jpg"
-    alt="Équipe TechSprint en pleine collaboration"
+    alt="Équipe AFRIVA en pleine collaboration"
     fill
     priority
     quality={90}
@@ -140,8 +140,8 @@ export default function AboutPage() {
         >
           {values.map((item, index) => (
             <div key={index} className="relative overflow-hidden">
-              <Card className="max-w-md h-[210px] bg-white text-black-pale hover:bg-blue transition-all duration-700 hover:scale-105 hover:rounded-3xl rounded-xl p-6 text-center group flex flex-col items-center justify-center">
-                <CardContent className="transition-all duration-700 text-center">
+              <Card className="max-w-md min-h-[210px] h-auto bg-white text-black-pale hover:bg-blue transition-all duration-700 hover:scale-105 hover:rounded-3xl rounded-xl p-6 text-center group flex flex-col items-center justify-center">
+                <CardContent className="transition-all duration-1000 text-center">
                  
                   <h3 className="text-lg font-extrabold group-hover:text-white font-natom-bold text-black-pale">
                     {item.title}

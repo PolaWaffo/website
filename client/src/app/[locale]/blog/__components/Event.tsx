@@ -117,7 +117,7 @@ export default function BlogList({ blogs }: BlogListProps) {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="container mx-auto min-h-screen max-w-7xl p-6">
+      <main className="container mx-auto min-h-screen max-w-7xl px-4 pb-6 pt-32">
         <h1 className="md:text-4xl text-2xl font-bold mb-8 text-center">
           {t("post.title")}
         </h1>

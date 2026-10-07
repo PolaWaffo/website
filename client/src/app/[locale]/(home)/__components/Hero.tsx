@@ -9,7 +9,7 @@ export default function HeroSection() {
   const t = useI18n();
   return (
     <section
-      className="relative flex flex-col justify-center items-center text-center pt-20 px-4 text-white min-h-screen overflow-hidden"
+      className="relative flex flex-col justify-center items-center text-center pt-32 pb-12 px-4 text-white min-h-svh overflow-hidden"
       aria-labelledby="hero-title"
     >
       {/* Optimized background image */}

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nova+Square&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 @tailwind utilities;
@@ -10,7 +11,17 @@
   --font-mono: var(--font-geist-mono);
   --font-mons-semibold: var(--font-mons-semibold);
   --font-mons-medium: var(--font-mons-medium);
-  --font-natom-bold: var(----font-natom-bold);
+  --font-natom-bold: "Nova Square", sans-serif;
+  --font-title: "Nova Square", sans-serif;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-lg: 1.0625rem;
+  --text-xl: 1.1875rem;
+  --text-2xl: 1.375rem;
+  --text-3xl: 1.6875rem;
+  --text-4xl: clamp(1.875rem, 3.2vw, 2.0625rem);
+  --text-5xl: clamp(2rem, 3.4vw, 2.6875rem);
+  --text-8xl: clamp(4rem, 12vw, 5.5rem);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-orange:var(--orange);
   --color-blue:var(--blue);
@@ -66,6 +77,7 @@ html{
   overflow-x: hidden;
 }
 body{
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 body::-webkit-scrollbar{
@@ -157,4 +169,52 @@ body::-webkit-scrollbar{
     background-size: cover;
   }
 
+}
+
+/* Typography and responsive refinements: existing colors and content retained. */
+@layer base {
+  body {
+    font-family: var(--font-mons-medium), sans-serif;
+    font-size: var(--text-base);
+    line-height: 1.65;
+  }
+  h1, h2, h3, h4, h5, h6, [data-slot="card-title"] {
+    font-family: "Nova Square", sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+  }
+  p { line-height: 1.7; }
+  main, section, footer, .grid > *, .flex > * { min-width: 0; }
+  p, li, a { overflow-wrap: break-word; }
+}
+/* The heading utilities must not override the title font. */
+h1, h2, h3, h4, h5, h6, [data-slot="card-title"] {
+  font-family: "Nova Square", sans-serif;
+  font-weight: 400;
+}
+main > section.flex.flex-col > p {
+  max-width: 70ch;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+.text-justify { hyphens: auto; text-align-last: start; }
+[data-slot="card"] { min-width: 0; }
+[data-slot="button"] { max-width: 100%; }
+iframe { max-width: 100%; }
+@media (max-width: 639px) {
+  .text-justify { text-align: start; }
+  [data-slot="button"] {
+    white-space: normal;
+    height: auto;
+    min-height: 2.5rem;
+    padding-block: 0.625rem;
+    text-align: center;
+  }
+  main > section.flex.flex-col > h2 { padding-inline: 1rem; }
+  footer > .grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  footer > .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
