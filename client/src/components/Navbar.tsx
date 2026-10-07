@@ -146,7 +146,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex items-center justify-between p-4 sticky top-0 z-[1000] bg-white shadow-sm">
+    <nav className="flex items-center justify-between p-4 fixed top-0 w-full z-1000  bg-white shadow-sm">
       {/* Logo */}
       <Link
         href={`/${locale}`}
@@ -154,11 +154,12 @@ export default function Navbar() {
         className="flex items-center"
       >
         <Image
-          src="/assets/logo.png"
+        className="w-20 "
+          src="/assets/logo.jpg"
           alt="Afriva Logo"
           priority
-          width={80}
-          height={80}
+          width={100}
+          height={100}
         />
       </Link>
 
@@ -170,8 +171,8 @@ export default function Navbar() {
               href={href}
               className={`transition-colors duration-300 hover:text-orange ${
                 pathname === href
-                  ? "text-orange p-1 px-2 rounded-lg w-fit  hover:underline"
-                  : ""
+                  ? "text-orange p-1 px-2 rounded-lg w-fit  "
+                  : "hover:underline "
               }`}
             >
               {label}
@@ -218,8 +219,8 @@ export default function Navbar() {
                     onClick={() => setOpen(false)}
                     className={`transition-colors duration-300 hover:text-orange ${
                       pathname === href
-                        ? "text-orange p-1 px-2 rounded-lg w-fit  hover:underline"
-                        : ""
+                        ? "text-orange p-1 px-2 rounded-lg w-fit  "
+                        : "hover:underline"
                     }`}
                   >
                     {label}

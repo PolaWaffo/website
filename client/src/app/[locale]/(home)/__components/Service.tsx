@@ -47,10 +47,10 @@ export default function ServicesSection() {
       ];
   return (
     <section className="flex flex-col my-10 md:mx-20">
-      <h2 className="text-center font-natom-bold text-3xl md:text-5xl font-semibold">
+      <h2 className="text-center font-natom-bold text-2xl md:text-5xl font-semibold">
        {t('services.title')}
       </h2>
-      <p className="text-center font-mons-medium tracking-wider py-5">
+      <p className="text-justify font-mons-medium tracking-wider p-4 mb-2">
       {t('services.description')}
       </p>
       <motion.div
@@ -58,7 +58,7 @@ export default function ServicesSection() {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
         viewport={{ once: false, amount: 0.1 }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-4 md:mx-0"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mx-6 md:mx-0"
       >
         {services.map((service, index) => (
           <div key={index} className="relative group">
@@ -70,12 +70,12 @@ export default function ServicesSection() {
                 className="object-cover rounded-xl"
               />
             </div>
-            <Card className="-mt-10 mx-4 relative z-10 group-hover:scale-105 group-hover:bg-blue/70 group-hover:text-white transition-all duration-500 bg-white border-0 rounded-xl p-6 text-center shadow-lg">
+            <Card className="-mt-10 mx-4 relative z-10 group-hover:scale-105 group-hover:bg-blue/70 group-hover:text-white transition-all duration-500 bg-white border-0 rounded-xl  text-center shadow-lg">
               <CardContent>
-                <h3 className="text-lg font-extrabold group-hover:text-white font-natom-bold text-black-pale">
+                <h3 className="md:text-lg text-md font-extrabold group-hover:text-white font-natom-bold text-black-pale">
                   {service.title}
                 </h3>
-                <p className="text-sm text-black-pale group-hover:text-white font-mons-medium mt-2 tracking-wide">
+                <p className="text-sm text-justify text-black-pale group-hover:text-white font-mons-medium mt-2 tracking-wide">
                   {service.content}
                 </p>
               </CardContent>

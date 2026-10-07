@@ -29,12 +29,12 @@ export default function ChoisirSection() {
       ];
     return (
       <section className="flex flex-col my-10 md:mx-20">
-        <h2 className="text-center font-natom-bold text-3xl md:text-5xl font-semibold">
-          {t('choose.title')}
-        </h2>
-        <p className="text-center font-mons-medium tracking-wider py-5">
-        {t('choose.description')}
-        </p>
+         <h2 className="text-center font-natom-bold text-2xl md:text-5xl font-semibold">
+       {t('choose.title')}
+      </h2>
+      <p className="text-justify font-mons-medium tracking-wider p-4 mb-2">
+       {t('choose.description')}
+      </p>
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -44,19 +44,19 @@ export default function ChoisirSection() {
         >
           {choisir.map((item, index) => (
             <div key={index} className="relative overflow-hidden">
-              <Card className="max-w-md h-[210px] bg-white text-black-pale hover:bg-blue transition-all duration-700 hover:scale-105 hover:rounded-3xl rounded-xl p-6 text-center group flex flex-col items-center justify-center">
-                <CardContent className="transition-all duration-700 text-center">
+              <Card className="max-w-md h-[210px] hover:bg-blue  text-black-pale  transition-all duration-1000 hover:scale-105 hover:rounded-3xl rounded-xl p-6 text-center group flex flex-col items-center justify-center">
+                <CardContent className="transition-all duration-1000">
                 
                   
-                 <div className="flex gap-2 items-center">
-                   <item.icon className="flex items-center justify-center p-1 h-10 w-10 border rounded-full text-blue bg-white" />
-                  <h3 className="text-lg font-extrabold group-hover:text-white font-natom-bold text-black-pale">
+                 <div className="flex gap-2 text-nowrap items-center">
+                   <item.icon className="flex items-center justify-center p-1 h-10 w-10 border border-transparent hover:text-white rounded-full text-blue " />
+                  <h3 className="text-lg text-start font-extrabold group-hover:text-white font-natom-bold text-black-pale">
                     {item.title}
                   </h3>
                  </div>
                   <p className="text-sm text-black-pale group-hover:text-white font-mons-medium mt-2">
                     {item.content}
-                  </p>
+                  </p>hover:text-white
                 </CardContent>
               </Card>
             </div>

@@ -292,11 +292,13 @@ export default function RealizationsSection() {
   };
   return (
     <section className="flex flex-col my-10 md:mx-20">
-      <h2 className="text-center font-natom-bold text-3xl md:text-5xl font-semibold">
-        {t('realizations.title')}
+     
+     
+       <h2 className="text-center font-natom-bold text-2xl md:text-5xl font-semibold">
+       {t('realizations.title')}
       </h2>
-      <p className="text-center font-mons-medium tracking-wider py-5">
-        {t('realizations.description')}
+      <p className="text-justify font-mons-medium tracking-wider p-4 mb-2">
+       {t('realizations.description')}
       </p>
 
       <motion.div
