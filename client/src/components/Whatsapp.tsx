@@ -69,7 +69,7 @@ export default function WhatsAppButton() {
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="font-semibold text-lg">
-                      Besoin d'aide ?
+                      Besoin d&apos;aide ?
                     </h3>
 
                     <p className="text-sm text-white/90">

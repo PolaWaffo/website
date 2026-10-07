@@ -1,6 +1,6 @@
 "use client";
 
-import { Quote, User, User2 } from "lucide-react";
+import { Quote, User } from "lucide-react";
 import { motion } from "framer-motion";
 
 import { Card, CardContent } from "@/components/ui/card";
@@ -87,7 +87,7 @@ export default function Testimonies() {
         >
           <CarouselContent>
             {clients.map((client, index) => {
-              const ClientImage = client.image;
+              
 
               return (
                 <CarouselItem
