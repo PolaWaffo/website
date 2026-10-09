@@ -244,7 +244,7 @@ export default function RealizationsSection() {
       title: t('realizations.8.title'),
       description: t('realizations.8.description'),
       image: '/assets/solif.png',
-      link: 'https://spring-coop-qtqrmhh15-jpteks-projects.vercel.app/',
+      link: 'https://spring-coop-bod.vercel.app/',
     },
     {
       id: 2,
@@ -268,13 +268,13 @@ export default function RealizationsSection() {
       link: 'https://finzo-woad.vercel.app/',
     },
    
-    {
-      id: 6,
-      title: t('realizations.5.title'),
-      description: t('realizations.5.description'),
-      image: '/assets/mboa.png',
-      link: 'https://mboashopsite.onrender.com/',
-    },
+    // {
+    //   id: 6,
+    //   title: t('realizations.5.title'),
+    //   description: t('realizations.5.description'),
+    //   image: '/assets/mboa.png',
+    //   link: 'https://mboashopsite.onrender.com/',
+    // },
   
 
     {

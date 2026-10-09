@@ -8,7 +8,7 @@ export default function ServicesSection() {
   const t=useI18n()
     const services = [
         {
-          image: "/assets/website.jpg",
+          image: "/assets/website.jpeg",
           title: t('services.list.website'),
           content:
            t('services.list.website.content')
@@ -33,7 +33,7 @@ export default function ServicesSection() {
         //   t('services.list.graphic.content')
         // },
         {
-          image: "/assets/designweb.jpg",
+          image: "/assets/ui.jpeg",
           title: t('services.list.webdesign'),
           content:
           t('services.list.webdesign.content'),
