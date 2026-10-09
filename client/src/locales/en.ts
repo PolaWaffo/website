@@ -5,9 +5,9 @@ export default {
   'navbar.blog': 'Blog',
   'navbar.contact': 'Start a Project',
 
-  'hero.title': 'Bringing your digital ideas to life.',
+  'hero.title': 'Bring your digital ideas to life.',
   'hero.subtitle':
-    'We create customized technology solutions to boost your performance and revenue.',
+    'We create customized digital solutions to boost your performance and revenue.',
   'hero.button.quote': 'Start a Project',
   'hero.button.services': 'Our Services',
   'hero.quote':
@@ -134,14 +134,14 @@ export default {
 
   'about.title': 'About AFRIVA',
   'about.description':
-    'Our mission, vision, and the passionate team behind AFRIVA.',
+    'Our mission and  vision behind AFRIVA.',
   'about.story.title': 'Our Story',
   'about.story.content':
-    'AFRIVA was created to support SMEs and individuals in their digital transformation. We embody agility, innovation, and technological excellence.',
+    'AFRIVA was founded to support enterprises and individuals in their digital transformation through innovative, accessible solutions tailored to their needs. It embodies agility, innovation, and digital excellence, with the ambition of simplifying operations, driving growth, and making digital technology accessible across all sectors in Africa.',
   'about.mission':
     'Mission: To provide accessible, customized, and sustainable digital solutions that meet the specific needs of every business, regardless of their industry or level of digital maturity.',
   'about.vision':
-    'Vision: To become a leading partner in digital transformation for SMEs and individuals, locally and internationally.',
+    'Vision: AFRIVA aims to accelerate the digital transformation of African businesses and make digital technology accessible across all sectors by delivering innovative, practical solutions tailored to local realities, simplifying operations, driving growth, and creating lasting impact across Africa.',
   'about.value.title': 'Our Values',
   'about.value.content':
     'Discover our ready-to-use solutions tailored to your needs.',
@@ -272,7 +272,7 @@ export default {
   'pricing.project.description':
     'Can’t find what you’re looking for? We can create a customized solution tailored to your specific needs.',
   'pricing.project.button': 'Tell Us About Your Project',
-
+"whatsapp.title": "Need help?", "whatsapp.subtitle": "Choose who to contact", "whatsapp.open": "Open WhatsApp contacts", "whatsapp.close": "Close WhatsApp contacts", "whatsapp.footer": "AFRIVA · Innovate. Impact. Grow.", "whatsapp.contacts.commercial.name": "AFRIVA Sales", "whatsapp.contacts.commercial.role": "Quotes, projects and sales enquiries", "whatsapp.contacts.commercial.message": "Hello AFRIVA, I would like to learn more about your services and discuss a project.", "whatsapp.contacts.creative.name": "Creative Services", "whatsapp.contacts.creative.role": "Learn more about our additional services: flyers, video editing, and more.", "whatsapp.contacts.creative.message": "Hello AFRIVA, I would like to learn more about your additional services, especially flyer design and video editing.", "whatsapp.contacts.support.name": "AFRIVA Support", "whatsapp.contacts.support.role": "Project assistance and follow-up", "whatsapp.contacts.support.message": "Hello AFRIVA, I need assistance with my project.",
   'blog.title': 'Our Blog',
   'blog.description':
     'Tips, news, and insights about the digital world.',

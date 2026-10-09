@@ -18,7 +18,7 @@ export default function Footer() {
     { href: `/${locale}`, label: t("navbar.home") },
     { href: `/${locale}/about`, label: t("navbar.about") },
     { href: `/${locale}/pricing`, label: t("navbar.pricing") },
-    { href: `/${locale}/blog`, label: t("navbar.blog") },
+    // { href: `/${locale}/blog`, label: t("navbar.blog") },
     { href: `/${locale}/contact`, label: t("navbar.contact") },
   ];
   const toggleLanguage = () => {
@@ -45,8 +45,8 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-blue  text-white px-6 py-10">
-   <div className="md:place-items-center grid md:grid-cols-4  gap-8 ">
+    <footer className="bg-blue  text-white py-6">
+   <div className="lg:place-items-center grid  md:grid-cols-2 lg:grid-cols-4  gap-8 mx-5 lg:ml-10">
 
       {/* À Propos */}
       <section aria-labelledby="footer-about" className="flex flex-col gap-4">
@@ -96,7 +96,7 @@ export default function Footer() {
       </section>
   
       {/* Liens Rapides */}
-      <nav aria-label="Liens rapides" className="flex flex-col gap-4">
+      <nav aria-label="Liens rapides" className="flex flex-col gap-4 justify-self-center self-center">
         <h2 className="text-[16px] font-bold  font-natom-bold">{t('footer.title2')}</h2>
         <ul className="flex flex-col gap-2 font-mons-medium text-sm">
 
@@ -116,8 +116,8 @@ export default function Footer() {
       </nav>
   
       {/* Nos Services */}
-      <nav aria-label="Nos services" className="flex flex-col gap-4">
-        <h2 className="text-[16px] md:-mt-6 font-bold font-natom-bold">{t('footer.title3')}</h2>
+      <nav aria-label="Nos services" className="flex flex-col gap-4 self-center">
+        <h2 className="text-[16px] md:-mt-2 font-bold font-natom-bold">{t('footer.title3')}</h2>
         <ul className="flex flex-col gap-2 font-mons-medium text-sm">
           {serviceItems.map(({ label }, index) => (
             <li
@@ -131,7 +131,7 @@ export default function Footer() {
       </nav>
   
       {/* Newsletter */}
-      <section aria-labelledby="footer-newsletter" className="flex flex-col gap-4">
+      <section aria-labelledby="footer-newsletter" className="flex flex-col gap-4 justify-self-center">
         <h2 id="footer-newsletter" className="text-[16px] font-bold font-natom-bold">{t('footer.newsletter.button')}</h2>
         {/* <p className="text-sm leading-relaxed">
         {t('footer.newsletter.description')}

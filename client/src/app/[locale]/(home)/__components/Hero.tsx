@@ -54,20 +54,20 @@ export default function HeroSection() {
           viewport={{ once: false, amount: 0.2 }}
           className="flex flex-wrap justify-center gap-4 "
         >
-          <Button className="relative overflow-hidden group px-6 py-2 text-white bg-orange rounded-md">
+          <Button className="relative  overflow-hidden group md:px-6 px-15 py-2 text-white rounded-md">
             <Link
               href={`https://wa.me/237651118070?text=${encodeURIComponent(
                 t("hero.quote")
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="relative group inline-block px-6 py-2 cursor-pointer"
+              className=""
             >
               <span className="relative z-10 font-semibold font-mons-semibold text-sm">
                 {t("hero.button.quote")}
               </span>
               <span
-                className="absolute inset-0 bg-blue scale-x-0 group-hover:scale-x-150 origin-center transition-transform duration-700 ease-in-out"
+                className="absolute inset-0 bg-blue block h-full scale-x-0 group-hover:scale-x-150 origin-center transition-transform duration-1000 ease-in-out"
                 aria-hidden="true"
               />
             </Link>

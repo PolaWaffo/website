@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 import WhatsAppButton from '@/components/Whatsapp';
 
 export const metadata: Metadata = {
-  title: "À propos d'AFRIVA'",
+  title: "À propos d'AFRIVA",
   description: "Découvrez la mission, la vision et les valeurs d'AFRIVA",
 };
 export default function Pricing() {

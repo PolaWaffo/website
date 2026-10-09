@@ -146,7 +146,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex items-center justify-between p-4 fixed top-0 w-full z-1000  bg-white shadow-sm">
+    <nav className="flex items-center justify-between px-10 py-4 fixed top-0 w-full z-1000  bg-white shadow-sm">
       {/* Logo */}
       <Link
         href={`/${locale}`}
@@ -208,10 +208,10 @@ export default function Navbar() {
       <div className="md:hidden">
         <Sheet open={open} onOpenChange={setOpen}>
           <SheetTrigger>
-            <Menu />
+            <Menu className="text-orange"/>
           </SheetTrigger>{" "}
-          <SheetContent className="p-6 z-[1000]">
-            <ul className="flex flex-col gap-y-6 text-sm font-mons-medium text-blue">
+          <SheetContent side="top" className="p-6 z-[1000] h-full">
+            <ul className="flex flex-col items-center space-y-10 mt-20 text-sm font-mons-medium text-blue">
               {navItems.map(({ href, label }) => (
                 <li key={href}>
                   <Link
