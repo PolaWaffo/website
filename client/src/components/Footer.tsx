@@ -96,7 +96,7 @@ export default function Footer() {
       </section>
   
       {/* Liens Rapides */}
-      <nav aria-label="Liens rapides" className="flex flex-col gap-4 justify-self-center self-center">
+      <nav aria-label="Liens rapides" className="flex flex-col gap-4 md:justify-self-center md:self-center">
         <h2 className="text-[16px] font-bold  font-natom-bold">{t('footer.title2')}</h2>
         <ul className="flex flex-col gap-2 font-mons-medium text-sm">
 
@@ -116,7 +116,7 @@ export default function Footer() {
       </nav>
   
       {/* Nos Services */}
-      <nav aria-label="Nos services" className="flex flex-col gap-4 self-center">
+      <nav aria-label="Nos services" className="flex flex-col gap-4 md:self-center">
         <h2 className="text-[16px] md:-mt-2 font-bold font-natom-bold">{t('footer.title3')}</h2>
         <ul className="flex flex-col gap-2 font-mons-medium text-sm">
           {serviceItems.map(({ label }, index) => (
@@ -131,7 +131,7 @@ export default function Footer() {
       </nav>
   
       {/* Newsletter */}
-      <section aria-labelledby="footer-newsletter" className="flex flex-col gap-4 justify-self-center">
+      <section aria-labelledby="footer-newsletter" className="flex flex-col gap-4 md:justify-self-center">
         <h2 id="footer-newsletter" className="text-[16px] font-bold font-natom-bold">{t('footer.newsletter.button')}</h2>
         {/* <p className="text-sm leading-relaxed">
         {t('footer.newsletter.description')}
