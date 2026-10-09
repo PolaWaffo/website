@@ -90,6 +90,7 @@ export default function ChoisirSection() {
           className="
             text-lg
             text-start
+            text-nowrap
             font-extrabold
             group-hover:text-white
             font-natom-bold

@@ -5,9 +5,9 @@ export default {
   'navbar.blog': 'Blog',
   'navbar.contact': 'Start a Project',
 
-  'hero.title': 'Bringing your digital ideas to life.',
+  'hero.title': 'Bring your digital ideas to life.',
   'hero.subtitle':
-    'We create customized technology solutions to boost your performance and revenue.',
+    'We create customized digital solutions to boost your performance and revenue.',
   'hero.button.quote': 'Start a Project',
   'hero.button.services': 'Our Services',
   'hero.quote':
@@ -134,10 +134,10 @@ export default {
 
   'about.title': 'About AFRIVA',
   'about.description':
-    'Our mission, vision, and the passionate team behind AFRIVA.',
+    'Our mission and  vision behind AFRIVA.',
   'about.story.title': 'Our Story',
   'about.story.content':
-    'AFRIVA was created to support SMEs and individuals in their digital transformation. We embody agility, innovation, and technological excellence.',
+    'AFRIVA was created to support SMEs and individuals in their digital transformation. We embody agility, innovation, and digital excellence.',
   'about.mission':
     'Mission: To provide accessible, customized, and sustainable digital solutions that meet the specific needs of every business, regardless of their industry or level of digital maturity.',
   'about.vision':
