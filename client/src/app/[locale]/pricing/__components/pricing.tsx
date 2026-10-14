@@ -198,7 +198,7 @@ export default function OffersPage() {
                   </div>
                   <div className="mt-6">
                     <Link
-                      href="https://wa.me/237651118070"
+                      href="https://wa.me/+237658919821"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -261,7 +261,7 @@ export default function OffersPage() {
                   </div>
                   <div className="mt-6">
                     <Link
-                      href="https://wa.me/237651118070"
+                      href="https://wa.me/+237658919821"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -289,7 +289,7 @@ export default function OffersPage() {
               {t("pricing.project.description")}
             </p>
             <Link
-              href="https://wa.me/237651118070"
+              href="https://wa.me/+237658919821"
               target="_blank"
               rel="noopener noreferrer"
             >

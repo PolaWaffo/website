@@ -153,7 +153,7 @@ export default function Contact() {
             </div>
 
             <Link
-             href='https://wa.me/237651118070'
+             href='https://wa.me/+237658919821'
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -170,7 +170,7 @@ export default function Contact() {
           </form>
         </section>
 
-        <section className="w-full my-10">
+        {/* <section className="w-full my-10">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d63674.9794629403!2d9.729455939776724!3d4.084160847671739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x10610d0e0e4a7671%3A0xea4c2cf21dd231b9!2sDouala!3m2!1d4.0841414!2d9.770670299999999!5e0!3m2!1sen!2scm!4v1753962096477!5m2!1sen!2scm"
             width="100%"
@@ -182,7 +182,7 @@ export default function Contact() {
             referrerPolicy="no-referrer-when-downgrade"
             title="Google Map - Douala"
           />
-        </section>
+        </section> */}
       </main>
       <Footer />
     </div>

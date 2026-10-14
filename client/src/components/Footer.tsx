@@ -66,7 +66,7 @@ export default function Footer() {
         <div className="flex gap-4 text-2xl mt-2">
          
           <a
-            href="https://web.facebook.com/profile.php?id=61575300329816" 
+            href="https://web.facebook.com/profile.php?id=61595172540766" 
             aria-label="Facebook Afriva"
             target="_blank"
             rel="noopener noreferrer"
@@ -75,7 +75,7 @@ export default function Footer() {
             <FaFacebookF size={20}/>
           </a>
           <a
-            href="https://www.linkedin.com/company/techsprint-agency/"
+            href="https://www.linkedin.com/company/afriva"
             aria-label="LinkedIn Afriva"
             target="_blank"
             rel="noopener noreferrer"
@@ -84,7 +84,7 @@ export default function Footer() {
             <FaLinkedinIn size={20} />
           </a>
           <a
-            href="https://www.linkedin.com/company/techsprint-agency/"
+            href="https://www.linkedin.com/company/afriva"
             aria-label="Tiktok Afriva"
             target="_blank"
             rel="noopener noreferrer"
@@ -150,7 +150,7 @@ export default function Footer() {
                           <div className="text-sm font-mons-medium">
                             <h4 className="font-semibold">{t("contact.phone")}</h4>
                             <p className="text-sm">{t("contact.phone.content")}</p>
-                            <p className="text-sm">{t("contact.phone.content1")}</p>
+                            {/* <p className="text-sm">{t("contact.phone.content1")}</p> */}
                           </div>
                         </div>
         
