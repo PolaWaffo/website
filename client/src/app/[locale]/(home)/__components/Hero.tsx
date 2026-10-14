@@ -56,7 +56,7 @@ export default function HeroSection() {
         >
           <Button className="relative  overflow-hidden group md:px-6 px-15 py-2 text-white rounded-md">
             <Link
-              href={`https://wa.me/237651118070?text=${encodeURIComponent(
+              href={`https://wa.me/237658919821?text=${encodeURIComponent(
                 t("hero.quote")
               )}`}
               target="_blank"

@@ -16,23 +16,23 @@ const contacts = [
     id: "commercial",
     nameKey: "whatsapp.contacts.commercial.name",
     roleKey: "whatsapp.contacts.commercial.role",
-    phone: "237XXXXXXXXX",
+    phone: "+237658919821",
     messageKey: "whatsapp.contacts.commercial.message",
   },
   {
     id: "creative",
     nameKey: "whatsapp.contacts.creative.name",
     roleKey: "whatsapp.contacts.creative.role",
-    phone: "237XXXXXXXXX",
+    phone: "+237656403567",
     messageKey: "whatsapp.contacts.creative.message",
   },
-  {
-    id: "support",
-    nameKey: "whatsapp.contacts.support.name",
-    roleKey: "whatsapp.contacts.support.role",
-    phone: "237XXXXXXXXX",
-    messageKey: "whatsapp.contacts.support.message",
-  },
+  // {
+  //   id: "support",
+  //   nameKey: "whatsapp.contacts.support.name",
+  //   roleKey: "whatsapp.contacts.support.role",
+  //   phone: "237XXXXXXXXX",
+  //   messageKey: "whatsapp.contacts.support.message",
+  // },
 ];
 
 export default function WhatsAppButton() {
